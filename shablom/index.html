@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=, initial-scale=1.0">
+       <title>Photo</title>
+       <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+       
+<div class="background">
+
+<div class="nav">
+       <a class="a active" href="#">HOME</a>
+       <a class="b" style="background-image:url(../shablom/image/foto1.jpg);" href="#">ABOUT ME</a>
+       <a class="c" href="porfole/index.html">GALLERY</a>
+</div>
+
+<div class="content">
+
+       <div class="home">
+              <h1>I am  Nodirbek</h1>
+              <h3>Bobir Akilkhanov Tech Academy: Student</h3>
+       </div>
+
+       <div class="aboutus">
+              <p><b>Hello Friends</b><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              Vitae, dignissimos fugiat culpa explicabo dolor incidunt labore excepturi vel esse quis aut,molestiae, unde suscipit. <br>
+              Reprehenderit fugiat consequuntur ea alias temporibus nemo nostrum dolore omnis molestias iure voluptatibus, <br> </p>
+
+              <p> velit officia, deleniti soluta? Facere vero, quam dolor dolores quibusdam sint quis neque provident doloremque, quidem natus mollitia cum? <br>
+              Temporibus fugit obcaecati ab? Magnam necessitatibus repudiandae consectetur aut facere natus quos doloremque a quisquam ipsum architecto molestias possimus, id minima maxime sequi culpa quod adipisci debitis distinctio voluptatem, nesciunt maiores tempore totam. Suscipit, aliquid similique ipsum provident facere architecto temporibus.
+              Modi voluptatibus ratione quam itaque tenetur perspiciatis fugiat, ad, blanditiis voluptas dicta laboriosam sapiente omnis. Deserunt ducimus vel maxime architecto incidunt nihil nulla.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi reiciendis praesentium aliquam sit autem fuga ullam quod voluptate et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, esse dignissimos minima dolores ducimus obcaecati porro sequi vitae odit impedit voluptates iusto. Ea voluptatum consectetur omnis modi officiis eum corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ea dolores, iusto !
+              </p>
+              
+
+       </div>
+
+</div>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<scrip src="js/bootstrap.min.js"></script>
+<script text="text/javascript">
+
+       $(document).ready(function(){
+              $('a').click(function(){
+                     // alert("I am click");
+                     var selected = $(this);
+                     $('a').removeClass('active');
+                     $(selected).addClass('active');
+              });
+
+              var $a = $('.a'),
+              $b = $('.b'),
+              $d = $('.d')
+              $home = $('.home')
+              $aboutus = $('.aboutus');
+
+              $a.click(function(){
+                     $home.fadeIn();
+                     $aboutus.fadeOut();
+              })
+              $b.click(function(){
+                     $home.fadeOut();
+                     $aboutus.fadeIn();
+              })
+       })
+
+</script>
+
+</body>
+</html>
